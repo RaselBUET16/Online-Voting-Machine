@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.serverHomeController">
+   <children>
+      <Text fill="#2b0acd" layoutX="166.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Server">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="31.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Port number">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="portNumber" layoutX="253.0" layoutY="178.0" prefHeight="39.0" prefWidth="219.0" />
+      <Text layoutX="31.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Admin name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="adminUsername" layoutX="261.0" layoutY="253.0" prefHeight="39.0" prefWidth="211.0" />
+      <Text layoutX="31.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Admin Password">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="button" layoutX="274.0" layoutY="433.0" mnemonicParsing="false" onAction="#adminUser" text="OK">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="adminPassword" layoutX="265.0" layoutY="332.0" prefHeight="39.0" prefWidth="208.0" />
+   </children>
+</AnchorPane>

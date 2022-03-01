@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.adminController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="BACK" textFill="#480bd7">
+               <VBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="Welcome" textAlignment="JUSTIFY" textFill="#4512bc">
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="200.0" top="100.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="nominyButton" mnemonicParsing="false" onAction="#goNominySelection" text="Select Nominies">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="200.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="voterButton" mnemonicParsing="false" onAction="#goVoterSelection" prefHeight="56.0" prefWidth="222.0" text="Select Voters">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="200.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#logOut" text="Log out">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="230.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

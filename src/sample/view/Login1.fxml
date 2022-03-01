@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #FFE0AD;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.adminController">
+   <children>
+      <AnchorPane layoutX="85.0" layoutY="65.0" prefHeight="473.0" prefWidth="335.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <AnchorPane layoutX="68.0" layoutY="-65.0" prefHeight="102.0" prefWidth="279.0" />
+            <AnchorPane layoutX="-1.0" prefHeight="82.0" prefWidth="349.0" style="-fx-background-color: #FFFFEB;">
+               <children>
+                  <Label layoutX="106.0" layoutY="24.0" text="Login Form">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="8.0" layoutY="100.0" text="UserName : ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="30.0" layoutY="139.0" prefHeight="42.0" prefWidth="288.0" promptText="admin" style="-fx-background-color: #E8F0F0;" />
+            <Label layoutX="14.0" layoutY="192.0" text="Password :">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="31.0" layoutY="236.0" prefHeight="42.0" prefWidth="288.0" promptText="password" style="-fx-background-color: #E8F0F0;" />
+            <Button layoutX="30.0" layoutY="357.0" mnemonicParsing="false" onAction="#goadminHome" prefHeight="52.0" prefWidth="279.0" style="-fx-background-color: #FFCC00;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Text fx:id="error" fill="#d50a0a" layoutX="116.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutY="1.0" mnemonicParsing="false" onAction="#logOut" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #FFCC00;" text="BACK" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
